@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /Principles_Project/
+
+# Route /dashboard to DashboardController
+RewriteRule ^dashboard$ controllers/DashboardController.php [L]
+
+# Existing routes
+RewriteRule ^login$ views/auth/login.php [L]
+RewriteRule ^signup$ views/auth/signup.php [L]
